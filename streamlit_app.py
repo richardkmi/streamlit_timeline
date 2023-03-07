@@ -10,8 +10,8 @@ today = datetime.now().strftime('%Y-%m-%d')
 today_90d = (datetime.now() + timedelta(days=90) ).strftime('%Y-%m-%d')
 
 items = [
-    {"content": "First Event", "start": today},
-    {"content": "Last Event", "start": today_90d}]
+    {"content": "First Event", "start": today, "end": None},
+    {"content": "Last Event", "start": today_90d, "end": None}]
 
 df = pd.DataFrame(items)
 
